@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.persona-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Changed image rendering to avoid grainy downscaling */
+.imageContainer {
+    display: flex;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 50%;
+}
+
+img {
+    padding-top: 70px;
+    width: 200px;
+    height: auto;
+    
+    object-fit: scale-down;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.column {
+    width: 45%;
+}
+
+li {
+   margin-bottom: 10px; 
+}
+
+.quote {
+    font-style: italic;
+}
+
+/* Add your own colors below based on your Vibe! */
+h1 {
+    color: #cea800;
+}
+
+h3 {
+    color: #3e6400;
+    border-bottom: 2px solid #ddd;
+}
