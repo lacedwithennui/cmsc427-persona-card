@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Fira sans', sans-serif;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
@@ -12,7 +14,22 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     max-width: 600px;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
 }
 
 /* Changed image rendering to avoid grainy downscaling */
@@ -20,10 +37,10 @@ body {
     display: flex;
     overflow: hidden;
     width: 150px;
+    min-width: 150px;
     height: 150px;
     align-items: center;
     justify-content: center;
-    justify-self: center;
     border-radius: 50%;
 }
 
@@ -43,8 +60,12 @@ img {
     flex-direction: column;
 }
 
-.column {
-    width: 45%;
+.row {
+    background-color: #c7ecccaf;
+    border: 3px solid #538600;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px
 }
 
 li {
@@ -55,12 +76,10 @@ li {
     font-style: italic;
 }
 
-/* Add your own colors below based on your Vibe! */
-h1 {
-    color: #cea800;
+h1, h2, h3, p {
+    margin: 0px;
 }
 
-h3 {
-    color: #3e6400;
-    border-bottom: 2px solid #ddd;
+h1, h3 {
+    color: #cea800;
 }
